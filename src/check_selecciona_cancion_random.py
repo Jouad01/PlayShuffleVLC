@@ -13,7 +13,7 @@ def check_selecciona_cancion_random(libreria, cancion):
     assert isinstance(cancion, str), "la cancion debe ser un string"
 
     # compruebo si la canción está en la libreria
-    if cancion not in libreria:
+    if cancion not in libreria.keys():
         return False
     else:
         return True
