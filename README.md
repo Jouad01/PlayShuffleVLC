@@ -1,2 +1,5 @@
 # PlayShuffleVLC
-Script VLC Jouad y Joan
+
+## proyecto de programación
+
+
