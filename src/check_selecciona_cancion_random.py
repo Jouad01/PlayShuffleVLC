@@ -6,7 +6,7 @@ libreria = {"allthat":
                 {"track-number": 3, "artist": "unknown", "album": "unknown", "location": "../songs/moose.mp3"}   
             }
 
-def check_seleccion_cancion_random(libreria, cancion):
+def check_selecciona_cancion_random(libreria, cancion):
     
     # precondiciones
     assert isinstance(libreria, dict), "la libreria debe ser un diccionario"
