@@ -1,3 +1,5 @@
+import random
+
 libreria = {"allthat":
                 {"track-number": 3, "artist": "unknown", "album": "unknown", "location": "../songs/allthat.mp3"},
             "groovy": 
@@ -6,15 +8,9 @@ libreria = {"allthat":
                 {"track-number": 3, "artist": "unknown", "album": "unknown", "location": "../songs/moose.mp3"}   
             }
 
-def check_selecciona_cancion_random(libreria, cancion):
+def seleccion_cancion_random(libreria):
     
-    # precondiciones
-    assert isinstance(libreria, dict), "la libreria debe ser un diccionario"
-    assert isinstance(cancion, str), "la cancion debe ser un string"
+    # seleccionamos una cancion aleatoria de la lista de las claves de la libreria
+    cancion = random.choice(list(libreria.keys()))
 
-    # compruebo si la canción está en la libreria
-    if cancion not in libreria.keys():
-        return False
-    else:
-        return True
-    
+    return str(cancion)
