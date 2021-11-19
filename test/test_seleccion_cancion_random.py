@@ -6,8 +6,6 @@ from src.check_seleccion_cancion_random import check_seleccion_cancion_random
 import pytest
 
 canciones_invalidas = ['godzilla', 'butterfly effect', 'monster', 'waka waka']
-canciones_validas = list(libreria.keys())
-
 
 @pytest.mark.seleccion_cancion_random
 def test_seleccion_cancion_random():
